@@ -2,7 +2,7 @@
 
 //Install Readline later
 
-const question = [
+const questions = [
     {
         question : 'what is 2 + 2',
         options : ['2', '3', '4', '5'],
@@ -18,5 +18,10 @@ const question = [
 
 // Declare quiz function 
 function quiz() {
-    
+    let score = 0;
+
+    // Iterate through questions
+    questions.ForEach((q, index) => {
+        console.log(`Question ${index + 1}: ${q.question}`);
+    })
 }
